@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Admin Panel - Belanagar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Quicksand", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col items-center">
+  <!-- Header -->
+  <header class="w-full max-w-4xl py-6 px-6 flex justify-between items-center">
+   <h1 class="text-2xl font-bold text-[#3B6B5A]">Belanagar Admin Panel</h1>
+   <a href="#" class="text-sm text-red-500 hover:underline">Logout</a>
+  </header>  <!-- Main Dashboard -->  <main class="w-full max-w-4xl px-6 py-8 bg-white shadow rounded-lg">
+    <h2 class="text-xl font-semibold text-[#3B6B5A] mb-4">Dashboard Overview</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-[#7DA68B] text-white p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold">Total Users</h3>
+        <p class="text-2xl font-bold mt-2">134</p>
+      </div>
+      <div class="bg-[#7DA68B] text-white p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold">News Posts</h3>
+        <p class="text-2xl font-bold mt-2">45</p>
+      </div>
+      <div class="bg-[#7DA68B] text-white p-6 rounded-xl shadow">
+        <h3 class="text-lg font-semibold">Inquiries</h3>
+        <p class="text-2xl font-bold mt-2">8</p>
+      </div>
+    </div>
+  </main>  <!-- Form Section -->  <section class="w-full max-w-4xl mt-10 px-6 py-8 bg-[#A9C6BC] rounded-xl">
+    <h2 class="text-xl font-bold text-[#3B6B5A] mb-4">Create New Post</h2>
+    <form class="flex flex-col space-y-4">
+      <input type="text" placeholder="Title" class="w-full rounded-full bg-[#7DA68B] text-[#3B6B5A] py-3 px-4 placeholder-[#3B6B5A] font-medium focus:outline-none"/>
+      <textarea placeholder="Description" rows="4" class="w-full rounded-lg bg-[#7DA68B] text-[#3B6B5A] py-3 px-4 placeholder-[#3B6B5A] font-medium focus:outline-none"></textarea>
+      <input type="file" class="block text-sm text-gray-600" />
+      <button type="submit" class="w-full rounded-full bg-[#3B6B5A] text-white font-bold text-base py-3">Publish</button>
+    </form>
+  </section>  <!-- Footer -->  <footer class="text-center mt-10 mb-6 text-sm text-[#3B6B5A]">
+    &copy; 2025 Belanagar Admin Panel. All rights reserved.
+  </footer>
+ </body>
+</html>
